@@ -1,6 +1,7 @@
 class Calculator {
   constructor() {
-    this.apiUrl = '/api/calculate';
+    // ✅ Use full URL to Java backend to avoid issues in XAMPP
+    this.apiUrl = 'http://localhost:8081/api/calculate';
     this.initializeElements();
     this.attachEventListeners();
   }
@@ -40,7 +41,7 @@ class Calculator {
     const num2 = parseFloat(this.num2Input.value);
 
     if (isNaN(num1) || isNaN(num2)) {
-      this.displayError('Please enter valid numbers');
+      this.displayError('⚠️ Please enter valid numbers');
       return;
     }
 
@@ -57,27 +58,27 @@ class Calculator {
       this.hideLoading();
 
       if (result.error) {
-        this.displayError(result.error);
+        this.displayError(`❌ ${result.error}`);
       } else {
         this.displayResult(result);
       }
 
     } catch (error) {
       this.hideLoading();
-      this.displayError('Connection error: Server not reachable');
+      this.displayError('🔌 Connection error: Backend server not reachable');
       console.error('API Error:', error);
     }
   }
 
   displayResult(result) {
     const symbols = { add: '+', subtract: '−', multiply: '×', divide: '÷' };
-    const symbol = symbols[result.operation];
+    const symbol = symbols[result.operation] || '?';
 
     this.resultDisplay.className = 'result-display success';
     this.resultDisplay.innerHTML = `
       <div>
         <div class="calculation">${result.num1} ${symbol} ${result.num2}</div>
-        <div class="answer">${result.result}</div>
+        <div class="answer">= ${result.result}</div>
       </div>
     `;
   }
@@ -104,7 +105,7 @@ class Calculator {
   }
 }
 
-// Initialize the calculator
+// ✅ Initialize the calculator on page load
 window.onload = () => {
   new Calculator();
 };
