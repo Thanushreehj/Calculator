@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Online Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Online Calculator</h1>
+      <p>Perform basic arithmetic operations</p>
+    </header>
+
+    <main class="calculator">
+      <div class="input-section">
+        <h2>Enter Numbers</h2>
+        <div class="input-group">
+          <label for="num1">First Number:</label>
+          <input type="number" id="num1" placeholder="Enter first number" step="any" />
+        </div>
+        <div class="input-group">
+          <label for="num2">Second Number:</label>
+          <input type="number" id="num2" placeholder="Enter second number" step="any" />
+        </div>
+      </div>
+
+      <div class="operation-section">
+        <h2>Choose Operation</h2>
+        <div class="operation-buttons">
+          <button class="operation-btn" data-operation="add">
+            <span class="symbol">+</span>
+            <span class="text">Addition</span>
+          </button>
+          <button class="operation-btn" data-operation="subtract">
+            <span class="symbol">−</span>
+            <span class="text">Subtraction</span>
+          </button>
+          <button class="operation-btn" data-operation="multiply">
+            <span class="symbol">×</span>
+            <span class="text">Multiplication</span>
+          </button>
+          <button class="operation-btn" data-operation="divide">
+            <span class="symbol">÷</span>
+            <span class="text">Division</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="result-section">
+        <h2>Result</h2>
+        <div id="result-display" class="result-display">
+          <p class="placeholder">Select an operation to see result</p>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="clear-btn" class="clear-btn">Clear All</button>
+      </div>
+    </main>
+  </div>
+
+  <div id="loading" class="loading hidden">
+    <div class="spinner"></div>
+    <p>Calculating...</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
