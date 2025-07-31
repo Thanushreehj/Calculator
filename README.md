@@ -6,7 +6,7 @@ This is a full-stack online calculator web application built using **Core Java (
 
 ## 📌 Project Overview
 
-- **Project Type:** Minor Project (Java Full Stack Web Development)
+- **Project Type:** Mini Project (Java Full Stack Web Development)
 - **Backend:** Java (Core Java, `HttpServer`)
 - **Frontend:** HTML, CSS, JavaScript (Vanilla)
 - **Communication:** REST API using JSON
@@ -51,7 +51,7 @@ Calculator/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Thanushreehj/Calculator.git
+   git clone https://github.com/your-username/online-calculator.git
    cd online-calculator
 
 2. **Compile the Java backend:**
