@@ -51,7 +51,7 @@ Calculator/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/online-calculator.git
+   git clone https://github.com/Thanushreehj/Calculator.git
    cd online-calculator
 
 2. **Compile the Java backend:**
