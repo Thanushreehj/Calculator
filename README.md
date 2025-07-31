@@ -66,7 +66,7 @@ Calculator/
 ---
 
 ## 📷 Working Video
-- Video:
+- Video: (https://drive.google.com/file/d/1724OT8HjwpxPjHMtBrLoYMljOHTl0-t_/view?usp=drive_link)
 
 ---
 
@@ -82,15 +82,16 @@ Calculator/
 ## 📄 License
 
 This project is currently not licensed for public reuse.
--- If you wish to use this code for learning, personal, or educational purposes, feel free to do so. Please contact the author for commercial or redistribution permissions.
+- If you wish to use this code for learning, personal, or educational purposes, feel free to do so. Please contact the author for commercial or redistribution permissions.
 
 ---
 
 ## 👤 Author
 
 Thanushree H J
-Github account: https://github.com/Thanushreehj
-Email account: thanushreehj27@gmail.com
+- Github account: https://github.com/Thanushreehj
+- Email account: thanushreehj27@gmail.com
 
+---
 
 ### THANK YOU!
